@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.image1 {
+  background-image: url('https://resource.nationtv.tv/uploads/images/contents/w1024/2023/05/3kIgLK2OtpkKDYlnFCN1.webp?x-image-process=style/lg-webp');
+}
+
+.image2 {
+  background-image: url('https://mpics.mgronline.com/pics/Images/562000007142301.JPEG'); /* หรือเปลี่ยนตามต้องการ */
+}
+
+.center-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.content {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
