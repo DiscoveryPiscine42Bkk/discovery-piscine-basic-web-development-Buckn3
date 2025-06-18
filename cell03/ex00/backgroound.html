@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>เปลี่ยนพื้นหลัง</title>
-    <link rel="stylesheet" href="backgroound.css">
+  <meta charset="UTF-8">
+  <title>Random Background Color</title>
+  <link rel="stylesheet" href="backgroound.css">
 </head>
 <body>
-    <button id="changeBtn">เปลี่ยนพื้นหลัง</button>
+  <div class="container">
+    <button id="colorButton">Change Background Color</button>
+  </div>
 
-    <script>
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
+  <script>
+    const button = document.getElementById('colorButton');
 
-        document.getElementById('changeBtn').addEventListener('click', function() {
-            document.body.style.backgroundColor = getRandomColor();
-        });
-    </script>
+    button.addEventListener('click', () => {
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = randomColor;
+    });
+  </script>
 </body>
 </html>
